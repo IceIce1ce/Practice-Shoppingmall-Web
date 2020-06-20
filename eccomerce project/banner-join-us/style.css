@@ -1,0 +1,126 @@
+.content-banner-collection{
+  width: 80%;
+  position: relative;
+  left: 45px;
+  margin-top: 15px;
+}
+
+.scrolling-wrapper-collection {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  height: 730px;
+  margin-bottom: 20px;
+  width: 119%;
+  -webkit-overflow-scrolling: touch;
+}
+
+.scrolling-wrapper-collection .card-collection {
+  display: inline-block;
+  padding: 6px;
+}
+
+.product-collection{
+  text-align: left;
+  color: #111111;
+  font-size: 19px;
+  position: absolute;
+  top: 607px;
+  font-weight: bold;
+}
+
+.card-collection{
+  position: relative;
+}
+
+.scrolling-wrapper-collection::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+  background-color: #F5F5F5;
+  /*minimize scrollbar*/
+  margin-left: 340px;
+  margin-right: 340px;
+  /*minimize scrollbar*/
+}
+
+.scrolling-wrapper-collection::-webkit-scrollbar
+{
+  width: 10px;
+  height: 5px;
+  background-color: white; /*hidden color start and end for margin-left and margin-right*/
+}
+
+.scrolling-wrapper-collection::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+  background-color: #757575;
+}
+
+.card-collection img:hover{
+  filter: brightness(115%);
+}
+
+.scrolling-wrapper-collection::-webkit-scrollbar-thumb:active{
+  background-color: #111111;
+}
+
+.scrolling-wrapper-collection:hover{
+  cursor: pointer;
+}
+
+/*optimize mobile*/
+@media only screen and (max-width: 1023px){
+  .scrolling-wrapper-collection::-webkit-scrollbar {
+    display: none;
+  }
+
+  .resize-banner-mobile{
+    height: 350px;
+    width: 320px;
+  }
+
+  .product-collection{
+    text-align: left;
+    color: #111111;
+    font-size: 19px;
+    position: absolute;
+    top: 365px;
+    font-weight: bold;
+  }
+}
+
+@media only screen and (max-width: 640px){
+  .scrolling-wrapper-collection .card-collection {
+    display: inline-block;
+    padding: 2px;
+  }
+}
+
+@media only screen and (max-width: 780px){
+  .content-banner-collection{
+    width: 100%; /*default: 77%*/
+    position: relative;
+    left: 10px; /*default: 45px*/
+  }
+}
+/*optimize mobile*/
+
+#popular-fashion{
+  color: black;
+  font-weight: bold;
+  font-size: 25px;
+  margin-left: 50px;
+  margin-top: 70px;
+}
+
+@media only screen and (max-width: 780px){
+  #popular-fashion{
+    color: black;
+    font-weight: bold;
+    font-size: 25px;
+    margin-left: 12px;
+    margin-top: 70px;
+  }
+}
